@@ -8,7 +8,13 @@ const wordCont = document.getElementById("word");
  
 let userWord = prompt("Inserisci una parola");
 
-functPalindrome(userWord);
+if (functPalindrome(userWord) == true) {
+    console.log('è palindroma');
+    wordCont.innerHTML=`${userWord} è palindroma`;
+} else {
+    console.log('non è palindroma');
+    wordCont.innerHTML=`${userWord} non è palindroma`;
+}
 
 
 // INVERTO LA PAROLA INSERITA
@@ -31,11 +37,8 @@ function functPalindrome(inputWord) {
 
     // CONFRONTO LA PAROLA INVERTITA CON QUELLA INSERITA
     if(inputWord === reverseWord){
-        console.log("è una parola palindroma");
-       
-    }else{
-        console.log("non è palindroma");
+        return true;
+    } else {
+        return false;
     }
-
 }
-
