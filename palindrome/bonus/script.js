@@ -2,19 +2,29 @@
 // Creare una funzione per capire se la parola inserita è palindroma.
 // Dare l’output relativo.
 
-const wordCont = document.getElementById("word");
-// CHIEDO ALL'UTENTE DI INSERIRE UNA PAROLA
+const verifica = document.getElementById("submit");
+const wordCont = document.getElementById("word-box");
 
- 
-let userWord = prompt("Inserisci una parola");
 
-if (functPalindrome(userWord) == true) {
-    console.log('è palindroma');
-    wordCont.innerHTML=`${userWord} è palindroma`;
-} else {
-    console.log('non è palindroma');
-    wordCont.innerHTML=`${userWord} non è palindroma`;
-}
+verifica.addEventListener("click",
+    function(){
+        // CHIEDO ALL'UTENTE DI INSERIRE UNA PAROLA
+
+        
+        let userWord =document.getElementById("word").value;
+
+        if (functPalindrome(userWord) == true) {
+            console.log('è palindroma');
+            wordCont.innerHTML=`${userWord} è PALINDROMA`;
+        } else {
+            console.log('non è palindroma');
+            wordCont.innerHTML=`${userWord} NON è PALINDROMA`;
+        }
+
+    }
+);
+
+
 
 
 // INVERTO LA PAROLA INSERITA

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 50%;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+
+p {
+    font-size: 18px;
+    margin: 30px;
+}
+
+label {
+    color: grey;
+}
+
+input {
+    margin-bottom: 30px;
+}
+
+#word {
+    text-transform: uppercase;
+    width: 120px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    
+}
+
+#word-box {
+    font-size: 26px;
+    font-weight: bold;
+    color: blueviolet;
+}
