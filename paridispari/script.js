@@ -33,10 +33,10 @@ console.log("somma",somma);
 // STABILIAMO SE LA SOMMA E' PARI O DISPARI
 let risultato;
 if(pairUnpair(somma) === true) {
-    risultato = "la somma è pari";
+    risultato = "pari";
     console.log( "la somma è pari");
 }else {
-    risultato = "la somma è dispari";
+    risultato = "dispari";
     console.log( "la somma è dispari");
 }
 sommaCount.innerHTML=`La Somma dei numer è : ${somma} ${risultato}`;
